@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Avançado</title>
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"> 
     <!-- JS do projeto -->
     <script src="js/script.js"></script>
 </head>
@@ -20,16 +20,33 @@
              <input 
              type="text"
              id="todo-input"
-             placeholder="O que vai ">
+             placeholder="O que você vai fazer?">
             <button type="submit">
-                <i class="fa-thin fa-plus"></i>
+              <i class="fa-thin fa-plus"></i>
+            </button>
+         </div>
+       </form>
+       <form id="edit-form">
+          <p>Edite a sua tarefa:</p>
+          <div>
+            <input type="text" id="edit-input">
+            <button type="submit">
+              <i class="fa-solid fa-check-double"></i>
+            </button>
+          </div>
+       </form>
+       <div id="toolbar">
+        <div id="search">
+            <h4>Pesquisar:</h4>
+            <form>
+                <input type="text" id="search-input" placeholder="Buscar">
+                <button id="erase-button">
+                    <i class="fa-solid fa-delete-left"></i>
                 </button>
-            </div>
-        </form>
-        <form id="edit-form">
-            <p>Edite a sua tarefa:</p>
-            <input type="text" id="edit-form">
-        </form>
-    </div>
-</body>
+            </form>
+        </div>
+       </div>
+      </div>
+    </body>
 </html>
+                
