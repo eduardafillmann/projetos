@@ -8,7 +8,6 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 
 // Funções
 const saveTodo = (text) => {
-
     const todo = document.createElement("div");
     todo.classList.add("todo")
 
@@ -16,7 +15,8 @@ const saveTodo = (text) => {
     todoTitle.innerText = text;
     todo.appendChild(todoTitle);
 
-    console.log(todo)
+    const doneBtn = document.createElement("button")
+    d
 };
 
 // Eventos
