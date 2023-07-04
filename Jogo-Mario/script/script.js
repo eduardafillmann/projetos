@@ -5,10 +5,7 @@ const jump = () => {
     mario.classList.add('jump');
 
     setTimeout(() => {
-
       mario.classList.remove('jump');
-
-
     }, 500);
 }
 
@@ -17,7 +14,7 @@ const loop = setInterval(() => {
 
 
     const pipePosition = pipe.offsetLeft;
-    const marioPosition = window.getComputedStyle(mario).bottom.replace('px', '');
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
     console.log(marioPosition);
 
