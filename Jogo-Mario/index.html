@@ -6,9 +6,16 @@
     <link rel="stylesheet" href="/Jogo-Mario/css/style.css">
     <title>Mario Jump</title>
 </head>
-<body>
+<body onload="start()">
     
     <div class="game-board">
+        <form name="form_main">
+            <div class="timer">
+              <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+            </div>
+        
+          </form>
+
         <img src="./imagens/clouds.png" class="clouds">
         <img src="imagens/mario.gif" class="mario">
         <img src="imagens/pipe.png" class="pipe">
